@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Firpix\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Firpix\\.nuget\\packages"
+    ]
+  }
+}

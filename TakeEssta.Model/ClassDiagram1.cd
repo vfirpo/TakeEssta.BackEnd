@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TakeEssta.Model.Cajas">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAiAAAAAAAAMiACAAAAAAgACCAAQAAAAAAABAAQIAA=</HashCode>
+      <FileName>Cajas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Ingresos" />
+      <Property Name="Egresos" />
+      <Property Name="Comandas" />
+      <Property Name="Sueldos" />
+      <Property Name="Gastos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TakeEssta.Model.Sueldos">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sueldos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Comandas">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAiCAQEMIEAEAAAAACFKwAAQAEAAAAAAAAAAAAABIAo=</HashCode>
+      <FileName>Comandas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Gastos">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gastos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.IngresosCaja">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IngresosCaja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.EgresosCaja">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EgresosCaja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Products">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAGDAAQAAAgAAABIAAgAAAQAAACQAABAAAAAAAAAAA=</HashCode>
+      <FileName>Products.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sucursal" />
+      <Property Name="Rubro" />
+      <Property Name="SubRubro" />
+      <Property Name="Unit" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TakeEssta.Model.Sucursal" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Unit" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Rubro" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rubro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.SubRubro" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubRubro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Caracteristicas">
+    <Position X="6.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Caracteristicas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.Employees">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAAAIAAAAQAQAABgAAAMDAAAAAAAAAAg=</HashCode>
+      <FileName>Employees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TakeEssta.Model.EmployessCaracteristicas">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EmployessCaracteristicas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Caracteristicas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TakeEssta.Model.ProductosCaracteristicas">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductosCaracteristicas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Caracteristicas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="System.Collections.Generic.IList&lt;T&gt;" Collapsed="true">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

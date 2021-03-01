@@ -1,0 +1,12 @@
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Mappers.deps.json
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Mappers.dll
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Mappers.pdb
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Model.dll
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Model.pdb
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csprojAssemblyReference.cache
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.AssemblyInfoInputs.cache
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.AssemblyInfo.cs
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csproj.CoreCompileInputs.cache
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csproj.CopyComplete
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.dll
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.pdb

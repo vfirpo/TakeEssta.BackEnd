@@ -1,0 +1,9 @@
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\bin\Debug\netcoreapp3.1\TakeEssta.Model.deps.json
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\bin\Debug\netcoreapp3.1\TakeEssta.Model.dll
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\bin\Debug\netcoreapp3.1\TakeEssta.Model.pdb
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.csprojAssemblyReference.cache
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.AssemblyInfoInputs.cache
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.AssemblyInfo.cs
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.csproj.CoreCompileInputs.cache
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.dll
+C:\Users\Firpix\source\repos\TakeEssta\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.pdb
