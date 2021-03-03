@@ -9,9 +9,9 @@ namespace TakeEssta.Model
     {
         public int Id { get; set; }
 
-        public Sucursal Sucursal { get; set; }
+        public int SucursalId { get; set; }
 
-        public int Code { get; set; }
+        public string Code { get; set; }
 
         public string Description { get; set; }
 
@@ -27,15 +27,13 @@ namespace TakeEssta.Model
 
         public string EAN { get; set; }
 
-        public int Precio { get; set; }
+        public double Price { get; set; }
 
-        public int Precio2 { get; set; }
+        public double Price2 { get; set; }
 
-        public int Precio3 { get; set; }
+        public double Price3 { get; set; }
 
-        public IList<EmployessCaracteristicas> Caracteristicas { get; set; }
-
-
+        public IList<Behaviours> Behaviours { get; set; }
 
     }
 }
