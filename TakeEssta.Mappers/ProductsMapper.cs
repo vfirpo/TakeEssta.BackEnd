@@ -10,7 +10,6 @@ namespace TakeEssta.Mappers
 {
     public class ProductsMapper: BaseSQLMapper<Products>
     {
-
         public static IList<Products> GetBySucursal(int sucursal)
         {
             string SqlStatement = @"SELECT p.[Id]
@@ -27,6 +26,8 @@ namespace TakeEssta.Mappers
                                           ,p.[Price]
                                           ,p.[Price2]
                                           ,p.[Price3]
+                                          ,p.[StockAlert]
+                                      	  ,s.[Stock]
 	                                      ,r.*
 	                                      ,sr.*
 	                                      ,u.*
@@ -34,7 +35,8 @@ namespace TakeEssta.Mappers
                                       INNER JOIN rubro r ON p.RubroId = r.Id 
                                       INNER JOIN SubRubro sr ON p.SubRubroId = sr.Id
                                       INNER JOIN Units u ON  p.UmId = u.Id
-                                      WHERE p.SucursalId = @sucursalId OR p.SucursalId is null";
+                                      LEFT JOIN Stock s ON p.Id = s.ProductsId AND s.SucursalId = p.SucursalId OR s.SucursalId IS NULL
+                                      WHERE ( p.SucursalId = @sucursalId OR p.SucursalId IS NULL ) AND p.IsActive = 1";
 
 
             IList<Products> prods;

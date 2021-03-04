@@ -33,6 +33,10 @@ namespace TakeEssta.Model
 
         public double Price3 { get; set; }
 
+        public int StockAlert { get; set; }
+
+        public double Stock { get; set; }
+
         public IList<Behaviours> Behaviours { get; set; }
 
     }

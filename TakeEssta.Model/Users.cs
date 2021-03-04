@@ -19,8 +19,6 @@ namespace TakeEssta.Model
 
 		public string Password { get; set; }
 
-		public string PasswordHash { get; set; }
-
         public string Sal { get; set; }
 
         public Sucursal Sucursal { get; set; }

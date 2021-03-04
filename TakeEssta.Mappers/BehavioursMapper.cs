@@ -57,5 +57,22 @@ namespace TakeEssta.Mappers
             }
             return rtrnObj;
         }
+
+        public static IList<Behaviours> GetAll()
+        {
+            string SqlStatement = @"select b.* from behaviours b";
+
+            IList<Behaviours> rtrnObj;
+            try
+            {
+                rtrnObj = GetSQL(SqlStatement);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            return rtrnObj;
+        }
+
     }
 }

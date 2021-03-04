@@ -12,7 +12,40 @@ namespace TakeEssta.Mappers
     {
         internal static string SqlConn = @"Data Source=DESKTOP-BJ4OQ4G\SQLEXPRESS01;Initial Catalog=TakeEssta;Integrated Security=True";
 
-        public static IList<T> GetSQL (string sqlstatement, object parameters)
+        public static IList<N> GetSQL<N>(string sqlstatement, object parameters = null)
+        {
+            IList<N> rtrnObj;
+            try
+            {
+                using (var connection = new SqlConnection(SqlConn))
+                {
+                    rtrnObj = GetSQL<N>(sqlstatement, parameters, connection);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return rtrnObj;
+        }
+
+        public static IList<N> GetSQL<N>(string sqlstatement, object parameters, SqlConnection connection)
+        {
+            IList<N> rtrnObj;
+            try
+            {
+                rtrnObj = connection.Query<N>(sqlstatement, parameters).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return rtrnObj;
+        }
+
+        public static IList<T> GetSQL (string sqlstatement, object parameters = null)
         {
             IList<T> rtrnObj;
             try
