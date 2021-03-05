@@ -25,6 +25,8 @@ namespace TakeEssta.Model
 
         public Unit Unit { get; set; }
 
+        public ProductBrand ProductBrand { get; set; }
+
         public string EAN { get; set; }
 
         public double Price { get; set; }

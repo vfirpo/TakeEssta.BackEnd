@@ -29,5 +29,28 @@ namespace TakeEssta.APIRest.Controllers
             return (Ok(rtn));
 
         }
+
+        [HttpGet("GetToList")]
+        public ActionResult<PageItems<Products>> GetToList([FromQuery] int sucursalId, [FromQuery] int PageSize, [FromQuery] int CurrentPage, [FromQuery]  int rubroId = 0, [FromQuery] int subRubroId = 0)
+        {
+            var rtn = ProductsMapper.GetToList(sucursalId, PageSize, CurrentPage, rubroId, subRubroId);
+
+            return (Ok(rtn));
+
+        }
+        
+        [HttpPut("ActiveDesactive")]
+        public ActionResult<Response<bool>> ActiveDesactive(int productId)
+        {
+            var rtn = new Response<bool>();
+
+            rtn.Item = ProductsMapper.ActiveDesactive(productId);
+
+            rtn.Message = "Producto Modificado con Exito";
+            rtn.MessageType = MessageType.OK;
+            
+            return (Ok(rtn));
+
+        }
     }
 }
