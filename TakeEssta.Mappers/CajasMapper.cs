@@ -39,8 +39,8 @@ namespace TakeEssta.Mappers
 
         public static Response<Cajas> GetLastCaja(int sucursalId)
         {
-            string SqlStatement = @"select a.Id, a.FechaApertura, a.FechaCierre, a.IsOpen, a.SucursalId, b.Descripcion as [SucursalDescripcion], 
-                                a.Turno, a.InicioDeCaja, a.TotalTeoricoDeCaja, a.UserId, (c.Nombre + ' ' + c.Apellido) as [UserNombre] 
+            string SqlStatement = @"select a.Id, a.FechaApertura, a.FechaCierre, a.IsOpen, a.SucursalId, b.Description as [SucursalDescripcion], 
+                                a.Turno, a.InicioDeCaja, a.TotalTeoricoDeCaja, a.UserId, (c.FirstName + ' ' + c.LastName) as [UserNombre] 
                                 from cajas a inner join Sucursales b on a.SucursalId = b.Id inner join Users c on a.UserId = c.Id 
                                 Where a.SucursalId = @sucursalId and a.id = (select max(Id) from cajas where SucursalId = @sucursalId)
                                 ORDER BY a.Id DESC";
@@ -60,10 +60,10 @@ namespace TakeEssta.Mappers
 
         public static Response<Cajas> GetOpen(int sucursalId)
         {
-            string SqlStatement = @"select a.Id, a.FechaApertura, a.FechaCierre, a.IsOpen, a.SucursalId, b.Descripcion as [SucursalDescripcion], 
-                                a.Turno, a.InicioDeCaja, a.TotalTeoricoDeCaja, a.UserId, (c.Nombre + ' ' + c.Apellido) as [UserNombre] 
+            string SqlStatement = @"select a.Id, a.FechaApertura, a.FechaCierre, a.IsOpen, a.SucursalId, b.Description as [SucursalDescripcion], 
+                                a.Turno, a.InicioDeCaja, a.TotalTeoricoDeCaja, a.UserId, (c.FirstName + ' ' + c.LastName) as [UserNombre] 
                                 from cajas a inner join Sucursales b on a.SucursalId = b.Id inner join Users c on a.UserId = c.Id 
-                                Where a.SucursalId = @sucursalId and a.IsOpen = 1";
+                                Where a.SucursalId = @sucursalId and a.IsOpen = 1 ORDER BY a.Id DESC";
 
             var rtrnObj = new Response<Cajas>();
             try
@@ -144,6 +144,25 @@ namespace TakeEssta.Mappers
             return rtrnObj;
         }
 
+        public static Response<Cajas> GetCajasById(int cajaId)
+        {
+            string SqlStatement = @"select a.Id, a.FechaApertura, a.FechaCierre, a.IsOpen, a.SucursalId, b.Description as [SucursalDescripcion], 
+                                a.Turno, a.InicioDeCaja, a.TotalTeoricoDeCaja, a.UserId, (c.FirstName + ' ' + c.LastName) as [UserNombre] 
+                                from cajas a inner join Sucursales b on a.SucursalId = b.Id inner join Users c on a.UserId = c.Id 
+                                Where a.Id = @cajaId";
+
+            var rtrnObj = new Response<Cajas>();
+            try
+            {
+                rtrnObj.Items = GetSQL(SqlStatement, new { cajaId });
+            }
+            catch (Exception e)
+            {
+                rtrnObj.MessageType = MessageType.Error;
+                rtrnObj.Message = e.Message;
+            }
+            return rtrnObj;
+        }
 
     }
 }

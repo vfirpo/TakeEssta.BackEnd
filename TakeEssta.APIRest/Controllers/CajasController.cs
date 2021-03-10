@@ -41,7 +41,7 @@ namespace TakeEssta.APIRest.Controllers
             {
                 var retValue = CajasMapper.GetLastCaja(Sucursal);
 
-                return retValue;
+                return Ok(retValue);
 
             }
             catch (Exception)
@@ -64,7 +64,30 @@ namespace TakeEssta.APIRest.Controllers
                     retValue.MessageType = MessageType.Info;
                 }
 
-                return retValue;
+                return Ok(retValue);
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
+        [HttpGet("GetById")]
+        public ActionResult<Response<Cajas>> GetById([FromQuery] int iDCaja)
+        {
+            try
+            {
+                var retValue = CajasMapper.GetCajasById(iDCaja);
+
+                if (retValue.Items.Count == 0)
+                {
+                    retValue.Message = "La caja consultada no existe";
+                    retValue.MessageType = MessageType.Info;
+                }
+
+                return Ok(retValue);
 
             }
             catch (Exception)
@@ -79,7 +102,7 @@ namespace TakeEssta.APIRest.Controllers
         {
             try
             {
-                return CajasMapper.IsOpen(Sucursal);
+                return Ok(CajasMapper.IsOpen(Sucursal));
             }
             catch (Exception)
             {
