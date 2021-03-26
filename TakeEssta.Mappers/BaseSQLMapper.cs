@@ -10,8 +10,8 @@ namespace TakeEssta.Mappers
 {
     public class BaseSQLMapper<T>
     {
-        internal static string SqlConn = @"Data Source=DESKTOP-BJ4OQ4G\SQLEXPRESS01;Initial Catalog=TakeEssta;Integrated Security=True";
-
+        //internal static string SqlConn = @"Data Source=DESKTOP-ANGRGHL\SQLEXPRESS;Initial Catalog=TakeEssta;Integrated Security=True;";
+        internal static string SqlConn = @"Data Source=DESKTOP-ANGRGHL\SQLEXPRESS;Initial Catalog=TakeEssta;Persist Security Info=True;User ID=sa; Password=Pa$$word003";
         public static IList<N> GetSQL<N>(string sqlstatement, object parameters = null)
         {
             IList<N> rtrnObj;
@@ -132,5 +132,16 @@ namespace TakeEssta.Mappers
             }
         }
 
+        public static object ExecuteSQL(string sqlstatement, object parameters, SqlConnection connection, SqlTransaction sqlTransaction)
+        {
+            try
+            {
+                return connection.Execute(sqlstatement, parameters, sqlTransaction);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

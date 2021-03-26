@@ -26,9 +26,23 @@ namespace TakeEssta.APIRest
 
         public IConfiguration Configuration { get; }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                builder =>
+                {
+                    builder.WithOrigins("*")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
+
             var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("SecretKeyValue"));
 
             services.AddAuthentication(x => {
@@ -66,6 +80,8 @@ namespace TakeEssta.APIRest
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

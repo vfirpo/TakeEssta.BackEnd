@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace TakeEssta.APIRest.Controllers
     public class TablePropertiesController: ControllerBase
     {
         [HttpGet("GetRubros")]
+        [EnableCors]
         public ActionResult<Response<Rubro>> GetRubos()
         {
             var rubros =  TablePropertiesMapper.GetAllRubros();
@@ -31,6 +33,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("GetSubRubros")]
+        [EnableCors]
         public ActionResult<Response<SubRubro>> GetSubRubros()
         {
             var rubros = TablePropertiesMapper.GetAllSubRubros();
@@ -49,6 +52,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("GetProductBrands")]
+        [EnableCors]
         public ActionResult<Response<ProductBrand>> GetProductBrands()
         {
             var rubros = TablePropertiesMapper.GetAllProductBrand();
@@ -67,6 +71,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("GetAllUnits")]
+        [EnableCors]
         public ActionResult<Response<Unit>> GetAllUnits()
         {
             var rubros = TablePropertiesMapper.GetAllUnits();

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -22,11 +23,12 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet]
+        [EnableCors]
         public IList<Comandas> ListaDeComandas()
         {
             var lista = new List<Comandas>();
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 250; i++)
             {
                 lista.Add(new Comandas
                     { Id = i + 1, 
@@ -49,6 +51,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("encrypt")]
+        [EnableCors]
         public string ListaDeComandas(string password)
         {
             return CommonFunctions.GetSHA256(password);

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace TakeEssta.APIRest.Controllers
     public class BehavioursController: ControllerBase
     {
         [HttpGet("GetAll")]
+        [EnableCors]
         public ActionResult<Response<Behaviours>> GetAll()
         {
             var behaviours = BehavioursMapper.GetAll();

@@ -934,19 +934,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Firpix\\.nuget\\packages\\": {}
+    "C:\\Users\\Victor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj",
+      "projectUniqueName": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj",
       "projectName": "TakeEssta.Mappers",
-      "projectPath": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj",
-      "packagesPath": "C:\\Users\\Firpix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Mappers\\obj\\",
+      "projectPath": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Mappers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Firpix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -960,8 +960,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\TakeEssta.Model.csproj": {
-              "projectPath": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\TakeEssta.Model.csproj"
+            "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj": {
+              "projectPath": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj"
             }
           }
         }
@@ -1008,7 +1008,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

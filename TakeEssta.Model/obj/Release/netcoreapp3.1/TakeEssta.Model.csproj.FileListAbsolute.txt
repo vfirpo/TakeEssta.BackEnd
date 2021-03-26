@@ -1,0 +1,9 @@
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Release\netcoreapp3.1\TakeEssta.Model.deps.json
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Release\netcoreapp3.1\TakeEssta.Model.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Release\netcoreapp3.1\TakeEssta.Model.pdb
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Release\netcoreapp3.1\TakeEssta.Model.csprojAssemblyReference.cache
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Release\netcoreapp3.1\TakeEssta.Model.AssemblyInfoInputs.cache
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Release\netcoreapp3.1\TakeEssta.Model.AssemblyInfo.cs
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Release\netcoreapp3.1\TakeEssta.Model.csproj.CoreCompileInputs.cache
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Release\netcoreapp3.1\TakeEssta.Model.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Release\netcoreapp3.1\TakeEssta.Model.pdb

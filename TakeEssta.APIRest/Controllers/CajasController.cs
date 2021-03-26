@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace TakeEssta.APIRest.Controllers
         [HttpGet("GetCajasToList")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [EnableCors]
         public ActionResult<PageItems<Cajas>> GetCajasToList([FromQuery] int Sucursal, [FromQuery] int PageSize, [FromQuery] int CurrentPage)
         {
             try
@@ -35,6 +37,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("GetLast")]
+        [EnableCors]
         public ActionResult<Response<Cajas>> GetLastCajas([FromQuery] int Sucursal)
         {
             try
@@ -52,6 +55,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("GetOpen")]
+        [EnableCors]
         public ActionResult<Response<Cajas>> GetOpen([FromQuery] int Sucursal)
         {
             try
@@ -75,6 +79,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("GetById")]
+        [EnableCors]
         public ActionResult<Response<Cajas>> GetById([FromQuery] int iDCaja)
         {
             try
@@ -98,6 +103,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpGet("IsOpen")]
+        [EnableCors]
         public ActionResult<bool> IsOpen([FromQuery] int Sucursal)
         {
             try
@@ -112,6 +118,7 @@ namespace TakeEssta.APIRest.Controllers
         }
 
         [HttpPost("CrearCaja")]
+        [EnableCors]
         public ActionResult<Response<Cajas>> CrearCaja(Cajas caja)
         {
             try

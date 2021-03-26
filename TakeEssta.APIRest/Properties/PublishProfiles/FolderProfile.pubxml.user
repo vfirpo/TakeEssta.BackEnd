@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Code\TakeEssta\TakeEssta.BackEnd\ToWeb</_PublishTargetUrl>
+    <History>True|2021-03-25T18:02:17.9336989Z;True|2021-03-25T14:54:57.5184765-03:00;True|2021-03-25T14:46:22.5085828-03:00;True|2021-03-25T14:39:23.6364407-03:00;True|2021-03-25T14:14:03.9534908-03:00;True|2021-03-25T13:37:59.4702995-03:00;True|2021-03-25T10:26:31.3416618-03:00;True|2021-03-25T00:20:54.0683834-03:00;True|2021-03-24T00:22:33.4486899-03:00;True|2021-03-23T18:08:00.0745573-03:00;True|2021-03-21T02:08:41.7044256-03:00;True|2021-03-20T12:37:31.8179285-03:00;False|2021-03-20T12:36:06.1610346-03:00;True|2021-03-20T11:30:16.7958667-03:00;</History>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,12 @@
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\appsettings.Development.json
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\appsettings.json
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\TakeEssta.APIRest.pdb
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\clrcompression.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\clrjit.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\coreclr.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\mscordaccore.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\aspnetcorev2_inprocess.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\sni.dll
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\TakeEssta.Mappers.pdb
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\TakeEssta.Model.pdb
+D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Release\net5.0\win-x64\PubTmp\Out\TakeEssta.APIRest.exe

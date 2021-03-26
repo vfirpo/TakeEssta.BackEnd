@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\TakeEssta.Model.csproj": {}
+    "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\TakeEssta.Model.csproj": {
+    "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\TakeEssta.Model.csproj",
+        "projectUniqueName": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj",
         "projectName": "TakeEssta.Model",
-        "projectPath": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\TakeEssta.Model.csproj",
-        "packagesPath": "C:\\Users\\Firpix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Firpix\\source\\repos\\TakeEssta\\TakeEssta.Model\\obj\\",
+        "projectPath": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Firpix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
