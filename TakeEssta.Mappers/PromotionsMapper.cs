@@ -78,7 +78,19 @@ namespace TakeEssta.Mappers
 
         }
 
-        public static object SavePromotions(Promotions promotions, bool isNew)
+        public static object SavePromotions(Promotions promotions)
+        {
+            if (promotions.Id == 0)
+            {
+                return InsertPromotions(promotions);
+            }
+            else
+            {
+                return UpdatePromotions(promotions);
+            }
+        }
+
+        private static object InsertPromotions(Promotions promotions)
         {
             //Alta de promociones
             string SqlStatement = @"INSERT INTO [dbo].[Promotions]
@@ -108,9 +120,8 @@ namespace TakeEssta.Mappers
                                    ,@activeTo
                                    ,@activeDays
                                    ,@isActive
-                                   ,@userId)
+                                   ,@userId) SELECT @@IDENTITY";
 
-                        SELECT @@IDENTITY";
 
             Object xid;
             try
@@ -122,20 +133,22 @@ namespace TakeEssta.Mappers
                     {
                         try
                         {
-                            xid = connection.ExecuteScalar(SqlStatement, new {
-                               code = promotions.Code,
-                               description = promotions.Description,
-                               extendedDescription = promotions.ExtendedDescription,
-                               sucursalId = promotions.Sucursal.Id,
-                               price = promotions.Price,
-                               turno = promotions.Turno,
-                               image = promotions.Image,
-                               color = promotions.Color,
-                               activeFrom = promotions.ActiveFrom,
-                               activeTo = promotions.ActiveTo,
-                               activeDays = promotions.ActiveDays,
-                               isActive = true,
-                               userId = promotions.UserId}, tr);
+                            xid = connection.ExecuteScalar(SqlStatement, new
+                            {
+                                code = promotions.Code,
+                                description = promotions.Description,
+                                extendedDescription = promotions.ExtendedDescription,
+                                sucursalId = promotions.Sucursal.Id,
+                                price = promotions.Price,
+                                turno = promotions.Turno,
+                                image = promotions.Image,
+                                color = promotions.Color,
+                                activeFrom = promotions.ActiveFrom,
+                                activeTo = promotions.ActiveTo,
+                                activeDays = promotions.ActiveDays,
+                                isActive = true,
+                                userId = promotions.UserId
+                            }, tr);
 
                             promotions.Id = Convert.ToInt32(xid);
 
@@ -171,7 +184,7 @@ namespace TakeEssta.Mappers
                                            ,@subRubroId4
                                            ,@minUnits
                                            ,@maxUnits)";
-                            
+
                             var SqlStatement2 = @"INSERT INTO [dbo].[PromotionsConfigProducts]
                                                ([PromotionsId]
                                                ,[PromotionsConfigId]
@@ -186,7 +199,7 @@ namespace TakeEssta.Mappers
                                 connection.Execute(SqlStatement, new
                                 {
                                     promotionsId = promotions.Id,
-                                    rubroId = (item.Rubro == null)? 0: item.Rubro.Id,
+                                    rubroId = (item.Rubro == null) ? 0 : item.Rubro.Id,
                                     subrubroId = (item.SubRubro == null) ? 0 : item.SubRubro.Id,
                                     subRubroId2 = (item.SubRubro2 == null) ? 0 : item.SubRubro2.Id,
                                     subRubroId3 = (item.SubRubro3 == null) ? 0 : item.SubRubro3.Id,
@@ -221,7 +234,159 @@ namespace TakeEssta.Mappers
                 throw e;
             }
 
-            return new Promotions();
+            return promotions;
+        }
+
+        private static object UpdatePromotions(Promotions promotions)
+        {
+            //Alta de promociones
+            string SqlStatement = @"UPDATE [dbo].[Promotions]
+                                       SET [Code] = @code
+                                          ,[Description] = @description
+                                          ,[ExtendedDescription] = @extendedDescription
+                                          ,[SucursalId] = @sucursalId
+                                          ,[Price] = @price
+                                          ,[Turno] = @turno
+                                          ,[Image] = @image
+                                          ,[Color] = @color
+                                          ,[ActiveFrom] = @activeFrom
+                                          ,[ActiveTo] = @activeTo
+                                          ,[ActiveDays] = @activeDays
+                                          ,[IsActive] = @isActive
+                                          ,[UserId] = @userId
+                                     WHERE Id = @id";
+
+            try
+            {
+                using (var connection = new SqlConnection(SqlConn))
+                {
+                    connection.Open();
+                    using (var tr = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            connection.Execute(SqlStatement, new
+                            {
+                                id = promotions.Id,
+                                code = promotions.Code,
+                                description = promotions.Description,
+                                extendedDescription = promotions.ExtendedDescription,
+                                sucursalId = promotions.Sucursal.Id,
+                                price = promotions.Price,
+                                turno = promotions.Turno,
+                                image = promotions.Image,
+                                color = promotions.Color,
+                                activeFrom = promotions.ActiveFrom,
+                                activeTo = promotions.ActiveTo,
+                                activeDays = promotions.ActiveDays,
+                                isActive = true,
+                                userId = promotions.UserId
+                            }, tr);
+
+                            //Borro todos los Behaviours
+                            SqlStatement = @"DELETE [dbo].[PromotionsBehaviours]
+                                            WHERE PromotionsId = @promotionsId";
+
+                            connection.Execute(SqlStatement, new { promotionsId = promotions.Id }, tr);
+
+
+                            //Alta de Behaviours de Promociones
+                            SqlStatement = @"INSERT INTO [dbo].[PromotionsBehaviours]
+                                           ([PromotionsId]
+                                           ,[BehavioursId])
+                                     VALUES
+                                           (@promotionsId
+                                           ,@behavioursId)";
+
+                            foreach (var item in promotions.Behaviours)
+                            {
+                                connection.Execute(SqlStatement, new { promotionsId = promotions.Id, behavioursId = item.Id }, tr);
+                            }
+
+
+                            //Borro todos los FixedProducts
+                            SqlStatement = @"DELETE [dbo].[PromotionsConfigProducts]
+                                            WHERE PromotionsId = @promotionsId";
+
+                            connection.Execute(SqlStatement, new { promotionsId = promotions.Id }, tr);
+
+                            //Borro todas las configuraciones
+                            SqlStatement = @"DELETE [dbo].[PromotionsConfig]
+                                            WHERE PromotionsId = @promotionsId";
+
+                            connection.Execute(SqlStatement, new { promotionsId = promotions.Id }, tr);
+
+                            //Alta de Configuraciones
+                            SqlStatement = @"INSERT INTO [dbo].[PromotionsConfig]
+                                           ([PromotionsId]
+                                           ,[RubroId]
+                                           ,[SubRubroId]
+                                           ,[SubRubroId2]
+                                           ,[SubRubroId3]
+                                           ,[SubRubroId4]
+                                           ,[MinUnits]
+                                           ,[MaxUnits])
+                                     VALUES
+                                           (@promotionsId
+                                           ,@rubroId
+                                           ,@subRubroId
+                                           ,@subRubroId2
+                                           ,@subRubroId3
+                                           ,@subRubroId4
+                                           ,@minUnits
+                                           ,@maxUnits)";
+
+                            var SqlStatement2 = @"INSERT INTO [dbo].[PromotionsConfigProducts]
+                                               ([PromotionsId]
+                                               ,[PromotionsConfigId]
+                                               ,[ProductsId])
+                                         VALUES
+                                               (@promotionsId
+                                               ,@promotionsConfigId
+                                               ,@productsId)";
+
+                            foreach (var item in promotions.PromotionsConfig)
+                            {
+                                connection.Execute(SqlStatement, new
+                                {
+                                    promotionsId = promotions.Id,
+                                    rubroId = (item.Rubro == null) ? 0 : item.Rubro.Id,
+                                    subrubroId = (item.SubRubro == null) ? 0 : item.SubRubro.Id,
+                                    subRubroId2 = (item.SubRubro2 == null) ? 0 : item.SubRubro2.Id,
+                                    subRubroId3 = (item.SubRubro3 == null) ? 0 : item.SubRubro3.Id,
+                                    subRubroId4 = (item.SubRubro4 == null) ? 0 : item.SubRubro4.Id,
+                                    minUnits = item.MinUnits,
+                                    maxUnits = item.MaxUnits,
+                                }, tr);
+
+                                //Alta de productos Fijos
+                                foreach (var item2 in item.FixedProducts)
+                                {
+                                    connection.Execute(SqlStatement2, new
+                                    {
+                                        promotionsId = promotions.Id,
+                                        promotionsConfigId = item.Id,
+                                        productsId = item2.Id,
+                                    }, tr);
+                                }
+                            }
+                            tr.Commit();
+
+                        }
+                        catch (Exception)
+                        {
+                            tr.Rollback();
+                            throw;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return promotions;
         }
 
         private static IList<PromotionsConfig> GetConfig(int promotionsId)

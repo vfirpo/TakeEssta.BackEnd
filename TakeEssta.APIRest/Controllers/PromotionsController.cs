@@ -42,13 +42,13 @@ namespace TakeEssta.APIRest.Controllers
         [EnableCors]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<Response<bool>> SavePromotions([FromBody] Promotions promotions, bool isNew = true )
+        public ActionResult<Response<bool>> SavePromotions([FromBody] Promotions promotions)
         {
             try
             {
                 var rtn = new Response<bool>();
 
-                rtn.Value = PromotionsMapper.SavePromotions(promotions, isNew);
+                rtn.Value = PromotionsMapper.SavePromotions(promotions);
                 rtn.MessageType = MessageType.OK;
                 rtn.Message = "Promocion Grabada con Exito";
                 return Ok(rtn);
