@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,12 +13,14 @@ namespace TakeEssta.APIRest.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsersController: ControllerBase
     {
         [HttpGet("ValidateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [EnableCors]
+        [AllowAnonymous]
         public ActionResult<Response<Users>>ValidateUser([FromQuery] string user, [FromQuery] string password)
         {
             if (user == null) user = "";

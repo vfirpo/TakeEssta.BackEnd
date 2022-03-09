@@ -16,3 +16,13 @@ D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\Take
 D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.csproj.CoreCompileInputs.cache
 D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.dll
 D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Debug\netcoreapp3.1\TakeEssta.Model.deps.json
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Debug\netcoreapp3.1\TakeEssta.Model.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Debug\netcoreapp3.1\TakeEssta.Model.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.AssemblyInfoInputs.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.AssemblyInfo.cs
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.csproj.CoreCompileInputs.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.csproj.AssemblyReference.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\netcoreapp3.1\TakeEssta.Model.GeneratedMSBuildEditorConfig.editorconfig

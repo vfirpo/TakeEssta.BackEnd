@@ -3,15 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using TakeEssta.Model;
 
 namespace TakeEssta.Mappers
 {
     public class BaseSQLMapper<T>
     {
         //internal static string SqlConn = @"Data Source=DESKTOP-ANGRGHL\SQLEXPRESS;Initial Catalog=TakeEssta;Integrated Security=True;";
-        internal static string SqlConn = @"Data Source=DESKTOP-ANGRGHL\SQLEXPRESS;Initial Catalog=TakeEssta;Persist Security Info=True;User ID=sa; Password=Pa$$word003";
+        internal static string SqlConn = @"Data Source=.\SQLEXPRESS;Initial Catalog=TakeEssta;Persist Security Info=True;User ID=sa; Password=Pa$$word001";
         public static IList<N> GetSQL<N>(string sqlstatement, object parameters = null)
         {
             IList<N> rtrnObj;
