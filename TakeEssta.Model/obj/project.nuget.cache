@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7lrK2RC50x6NJ+aUpiEpoQQ69ylR/ukwHbHCHZBA3l9ZvDsTE16fSgtaPt0k21FgII5wr8MHqCmy79LvYQscug==",
+  "dgSpecHash": "1KeWas9LZnkFAqQ1idjOxKooCvSBzojQiGZywJcTaugrI6xyyqTpmW8OmBrVhClDMSb0+QCBtB1FbKaNwraiaQ==",
   "success": true,
-  "projectFilePath": "D:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Model\\TakeEssta.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\victor.firpo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\victor.firpo\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\victor.firpo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using TakeEssta.Model;
 
 namespace TakeEssta.APIRest.Controllers
 {
@@ -29,6 +30,12 @@ namespace TakeEssta.APIRest.Controllers
             stream = sha256.ComputeHash(encoding.GetBytes(str));
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
+        }
+
+        public static string CreateToken(Users user)
+        {
+
+            return null;
         }
     }
 }
