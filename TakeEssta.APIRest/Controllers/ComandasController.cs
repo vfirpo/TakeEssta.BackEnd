@@ -14,14 +14,6 @@ namespace TakeEssta.APIRest.Controllers
     [ApiController]
     public class ComandasController : ControllerBase
     {
-   
-        private readonly ILogger<ComandasController> _logger;
-
-        public ComandasController(ILogger<ComandasController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         [EnableCors]
         public IList<Comandas> ListaDeComandas()

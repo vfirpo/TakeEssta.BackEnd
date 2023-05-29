@@ -22,3 +22,16 @@ D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\Ta
 D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csproj.CopyComplete
 D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.dll
 D:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Mappers.deps.json
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Mappers.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Mappers.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Model.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\bin\Debug\netcoreapp3.1\TakeEssta.Model.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.AssemblyInfoInputs.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.AssemblyInfo.cs
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csproj.CoreCompileInputs.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csproj.CopyComplete
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.csproj.AssemblyReference.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Mappers\obj\Debug\netcoreapp3.1\TakeEssta.Mappers.GeneratedMSBuildEditorConfig.editorconfig

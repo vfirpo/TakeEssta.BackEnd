@@ -485,7 +485,7 @@
       },
       "TakeEssta.Mappers/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Dapper": "2.0.78",
           "Dapper.Contrib": "2.0.78",

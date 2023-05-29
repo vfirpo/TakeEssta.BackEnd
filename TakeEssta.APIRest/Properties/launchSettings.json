@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:62107/",
+      "applicationUrl": "http://localhost:5590/",
       "sslPort": 44383
     }
   },
@@ -27,7 +27,7 @@
     },
     "WSL 2": {
       "commandName": "WSL2",
-       "launchBrowser": true,
+      "launchBrowser": true,
       "launchUrl": "https://localhost:5001/swagger",
       "environmentVariables": {
         "ASPNETCORE_URLS": "https://localhost:5001;http://localhost:5000;https://192.168.1.179:5001/;http://192.168.1.179:5000/",

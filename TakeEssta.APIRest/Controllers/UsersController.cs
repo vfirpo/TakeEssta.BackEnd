@@ -14,6 +14,7 @@ namespace TakeEssta.APIRest.Controllers
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsersController: ControllerBase
     {
         [HttpGet("ValidateUser")]
