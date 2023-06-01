@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.4",
           "Swashbuckle.AspNetCore": "6.1.0",
+          "TakeEssta.BL": "1.0.0",
           "TakeEssta.Mappers": "1.0.0",
           "TakeEssta.Model": "1.0.0"
         },
@@ -299,6 +300,15 @@
           }
         }
       },
+      "TakeEssta.BL/1.0.0": {
+        "dependencies": {
+          "TakeEssta.Mappers": "1.0.0",
+          "TakeEssta.Model": "1.0.0"
+        },
+        "runtime": {
+          "TakeEssta.BL.dll": {}
+        }
+      },
       "TakeEssta.Mappers/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.78",
@@ -540,6 +550,11 @@
       "sha512": "sha512-7PYU/z2OnjoE0wr2ZDS2bNMuC9N7w5E1kv4I/qgSxVKhcKkE7IW+grDVh5M/w6S0yU7G79sHFOErL+uY5yH36Q==",
       "path": "z.dapper.plus/3.0.36",
       "hashPath": "z.dapper.plus.3.0.36.nupkg.sha512"
+    },
+    "TakeEssta.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "TakeEssta.Mappers/1.0.0": {
       "type": "project",

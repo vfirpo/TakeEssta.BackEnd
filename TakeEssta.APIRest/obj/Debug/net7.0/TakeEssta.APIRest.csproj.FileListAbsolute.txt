@@ -55,3 +55,5 @@ C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Debug\net7.0\refint\Ta
 C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Debug\net7.0\TakeEssta.APIRest.pdb
 C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Debug\net7.0\TakeEssta.APIRest.genruntimeconfig.cache
 C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\obj\Debug\net7.0\ref\TakeEssta.APIRest.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\bin\Debug\net7.0\TakeEssta.BL.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.APIRest\bin\Debug\net7.0\TakeEssta.BL.pdb
