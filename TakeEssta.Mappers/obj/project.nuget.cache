@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PVWzYY/jkQCAqVsfR/1GyqRwlMyNOA5YEaZrtWskX24X8ZHSpzM1uuRLINQMNn3Sbh9Id1qEn5FOYbTJPMCMAQ==",
+  "dgSpecHash": "ulcN90iwYTX8xG7srScVyCxMExupIBEhXKdvMn9EWpqAfjNWL4rPt2lLifLLeObTt3E2qv63leVEDnv068TlbQ==",
   "success": true,
   "projectFilePath": "C:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj",
   "expectedPackageFiles": [
@@ -20,10 +20,7 @@
     "C:\\Users\\victor.firpo\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
     "C:\\Users\\victor.firpo\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
     "C:\\Users\\victor.firpo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
-    "C:\\Users\\victor.firpo\\.nuget\\packages\\z.dapper.plus\\3.0.36\\z.dapper.plus.3.0.36.nupkg.sha512",
-    "C:\\Users\\victor.firpo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\victor.firpo\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\victor.firpo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\victor.firpo\\.nuget\\packages\\z.dapper.plus\\3.0.36\\z.dapper.plus.3.0.36.nupkg.sha512"
   ],
   "logs": []
 }

@@ -41,14 +41,5 @@ namespace TakeEssta.APIRest.Controllers
 
             return lista.ToArray();
         }
-
-        [HttpGet("encrypt")]
-        [EnableCors]
-        public string ListaDeComandas(string password)
-        {
-            return CommonFunctions.GetSHA256(password);
-        }
-
-
     }
 }

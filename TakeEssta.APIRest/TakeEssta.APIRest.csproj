@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <UserSecretsId>f0b59498-7781-425d-bc7a-0664d1945851</UserSecretsId>
   </PropertyGroup>
 
@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TakeEssta.BL\TakeEssta.BL.csproj" />
     <ProjectReference Include="..\TakeEssta.Mappers\TakeEssta.Mappers.csproj" />
     <ProjectReference Include="..\TakeEssta.Model\TakeEssta.Model.csproj" />
   </ItemGroup>

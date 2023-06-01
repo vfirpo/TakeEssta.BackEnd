@@ -1,0 +1,12 @@
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Debug\net7.0\TakeEssta.Model.deps.json
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Debug\net7.0\TakeEssta.Model.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\bin\Debug\net7.0\TakeEssta.Model.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.csproj.AssemblyReference.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.AssemblyInfoInputs.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.AssemblyInfo.cs
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.csproj.CoreCompileInputs.cache
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\refint\TakeEssta.Model.dll
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\TakeEssta.Model.pdb
+C:\Code\TakeEssta\TakeEssta.BackEnd\TakeEssta.Model\obj\Debug\net7.0\ref\TakeEssta.Model.dll

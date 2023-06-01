@@ -17,9 +17,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement, new { userId }, connection);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -34,9 +34,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement, new { productsId }, connection);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -51,9 +51,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement, connection);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -68,9 +68,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement, connection);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -85,9 +85,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement, connection);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -101,9 +101,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -128,9 +128,9 @@ namespace TakeEssta.Mappers
                     ExecuteSQL(SqlStatement, new { productsId = idProduct, behavioursId = item.Id }, connection, sqlTransaction);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return true;
         }

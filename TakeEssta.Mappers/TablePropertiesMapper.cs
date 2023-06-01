@@ -17,9 +17,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL<Rubro>(SqlStatement);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -33,9 +33,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL<SubRubro>(SqlStatement);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -49,9 +49,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL<ProductBrand>(SqlStatement);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }
@@ -65,9 +65,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL<Unit>(SqlStatement);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }

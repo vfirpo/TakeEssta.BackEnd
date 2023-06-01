@@ -67,12 +67,12 @@ namespace TakeEssta.Mappers
                 }
                 if (onlyActive)
                 {
-                    promos = promos.Where(p => (p.IsActive == true && p.ActiveTo < System.DateTime.Now)).ToList();
+                    promos = promos.Where(p => (p.IsActive == true && p.ActiveTo < DateTime.Now)).ToList();
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return promos;
 
@@ -229,9 +229,9 @@ namespace TakeEssta.Mappers
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return promotions;
@@ -381,9 +381,9 @@ namespace TakeEssta.Mappers
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return promotions;

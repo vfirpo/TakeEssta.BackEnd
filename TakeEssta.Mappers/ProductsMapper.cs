@@ -68,9 +68,9 @@ namespace TakeEssta.Mappers
 
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return prods;
         }
@@ -130,9 +130,9 @@ namespace TakeEssta.Mappers
 
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return prod;
         }
@@ -212,9 +212,9 @@ namespace TakeEssta.Mappers
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return new PageItems<Products>() { Items = prods, CurrentPage = CurrentPag, RecordCounts = recordCounts } ;
         }
@@ -279,9 +279,9 @@ namespace TakeEssta.Mappers
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return new Products();
@@ -303,9 +303,9 @@ namespace TakeEssta.Mappers
                     prods = GetSQL<ProductsStock>(SqlStatement, new { sucursalId });
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return prods;
         }

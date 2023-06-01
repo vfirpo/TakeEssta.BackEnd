@@ -17,9 +17,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = GetSQL(SqlStatement, new { userId }, connection);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }

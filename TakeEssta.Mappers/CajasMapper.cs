@@ -28,9 +28,9 @@ namespace TakeEssta.Mappers
                     rtrnObj.CurrentPage = CurrentPage;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
 			return rtrnObj;
@@ -87,9 +87,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = Convert.ToBoolean(GetValueSQL(SqlStatement, new { sucursalId }));
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
             return rtrnObj;
         }

@@ -1,33 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using TakeEssta.Model;
 
-namespace TakeEssta.APIRest.Controllers
+namespace TakeEssta.BL
 {
     public class CommonFunctions
     {
         public static string GetSHA1(string str)
         {
-            SHA1 sha1 = SHA1Managed.Create();
+            SHA1 sha1 = SHA1.Create();
             ASCIIEncoding encoding = new ASCIIEncoding();
-            byte[] stream = null;
             StringBuilder sb = new StringBuilder();
-            stream = sha1.ComputeHash(encoding.GetBytes(str));
+            byte[] stream = sha1.ComputeHash(encoding.GetBytes(str));
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
         }
 
         public static string GetSHA256(string str)
         {
-            SHA256 sha256 = SHA256Managed.Create();
+            SHA256 sha256 = SHA256.Create();
             ASCIIEncoding encoding = new ASCIIEncoding();
-            byte[] stream = null;
             StringBuilder sb = new StringBuilder();
-            stream = sha256.ComputeHash(encoding.GetBytes(str));
+            byte[] stream = sha256.ComputeHash(encoding.GetBytes(str));
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
         }
@@ -35,7 +30,7 @@ namespace TakeEssta.APIRest.Controllers
         public static string CreateToken(Users user)
         {
 
-            return null;
+            return "";
         }
     }
 }

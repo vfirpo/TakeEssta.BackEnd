@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net7.0": {
       "Dapper/2.0.78": {
         "type": "package",
         "compile": {
@@ -483,9 +483,23 @@
           }
         }
       },
+      "TakeEssta.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "TakeEssta.Mappers": "1.0.0",
+          "TakeEssta.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TakeEssta.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TakeEssta.BL.dll": {}
+        }
+      },
       "TakeEssta.Mappers/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Dapper": "2.0.78",
           "Dapper.Contrib": "2.0.78",
@@ -502,7 +516,7 @@
       },
       "TakeEssta.Model/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
           "bin/placeholder/TakeEssta.Model.dll": {}
         },
@@ -1354,6 +1368,11 @@
         "z.dapper.plus.nuspec"
       ]
     },
+    "TakeEssta.BL/1.0.0": {
+      "type": "project",
+      "path": "../TakeEssta.BL/TakeEssta.BL.csproj",
+      "msbuildProject": "../TakeEssta.BL/TakeEssta.BL.csproj"
+    },
     "TakeEssta.Mappers/1.0.0": {
       "type": "project",
       "path": "../TakeEssta.Mappers/TakeEssta.Mappers.csproj",
@@ -1366,9 +1385,10 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net7.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.4",
       "Swashbuckle.AspNetCore >= 6.1.0",
+      "TakeEssta.BL >= 1.0.0",
       "TakeEssta.Mappers >= 1.0.0",
       "TakeEssta.Model >= 1.0.0"
     ]
@@ -1390,16 +1410,19 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.BL\\TakeEssta.BL.csproj": {
+              "projectPath": "C:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.BL\\TakeEssta.BL.csproj"
+            },
             "C:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj": {
               "projectPath": "C:\\Code\\TakeEssta\\TakeEssta.BackEnd\\TakeEssta.Mappers\\TakeEssta.Mappers.csproj"
             },
@@ -1416,8 +1439,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -1439,24 +1462,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

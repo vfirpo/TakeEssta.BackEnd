@@ -20,9 +20,9 @@ namespace TakeEssta.Mappers
                     rtrnObj = GetSQL<N>(sqlstatement, parameters, connection);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return rtrnObj;
@@ -35,9 +35,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = connection.Query<N>(sqlstatement, parameters).ToList();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return rtrnObj;
@@ -53,9 +53,9 @@ namespace TakeEssta.Mappers
                     rtrnObj = GetSQL(sqlstatement, parameters, connection);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return rtrnObj;
@@ -68,9 +68,9 @@ namespace TakeEssta.Mappers
             {
                 rtrnObj = connection.Query<T>(sqlstatement, parameters).ToList();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             return rtrnObj;
@@ -85,9 +85,9 @@ namespace TakeEssta.Mappers
                     return GetValueSQL(sqlstatement, parameters, connection);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -97,9 +97,9 @@ namespace TakeEssta.Mappers
             {
                 return connection.ExecuteScalar(sqlstatement, parameters);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -112,9 +112,9 @@ namespace TakeEssta.Mappers
                     return ExecuteSQL(sqlstatement, parameters, connection);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -124,9 +124,9 @@ namespace TakeEssta.Mappers
             {
                 return connection.Execute(sqlstatement, parameters);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -136,9 +136,9 @@ namespace TakeEssta.Mappers
             {
                 return connection.Execute(sqlstatement, parameters, sqlTransaction);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
     }

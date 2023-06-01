@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TakeEssta.APIRest.props" />
+</Project>
